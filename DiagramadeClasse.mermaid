@@ -1,0 +1,11 @@
+classDiagram classe Usuário { -String nome -Conta conta -Recurso[] recursos -Cartão cartão -Notícias[] notícias }
+
+classe Conta { -String número -String agência -Número saldo -Número limite }
+
+classe Feature { -String ícone -String descrição }
+
+classe Card { -String número -Limite de número }
+
+classe Notícias { -Ícone de string -Descrição de string}
+
+Usuário "1" *-- "1" Conta Usuário "1" *-- "N" Recurso Usuário "1" *-- "1" Cartão Usuário "1" *-- "N" Notícias
